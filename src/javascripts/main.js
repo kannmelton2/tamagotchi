@@ -1,3 +1,8 @@
+import eat from './components/eat/eat';
 import '../styles/main.scss';
 
-console.error('hello from main');
+const init = () => {
+  eat.foodTracker();
+};
+
+init();
