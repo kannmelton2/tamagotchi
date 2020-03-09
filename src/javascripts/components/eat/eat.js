@@ -5,7 +5,11 @@ import './eat.scss';
 const fullnessMeter = (event) => {
   let full = petData.getFullVal();
   if (event.currentTarget.id === 'healthy') {
-    full += 10;
+    if (full < 90) {
+      full += 10;
+    } else if (full > 89 && full < 100) {
+      full = 100;
+    }
     console.error('healthy', full);
   } else {
     full -= 2;
