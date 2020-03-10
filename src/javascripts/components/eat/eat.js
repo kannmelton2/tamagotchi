@@ -6,16 +6,18 @@ const fullnessMeter = (event) => {
   let full = petData.getFullVal();
   if (event.currentTarget.id === 'healthy') {
     if (full < 90) {
-      full += 10;
-    } else if (full > 89 && full < 100) {
-      full = 100;
+      petData.setFullVal(full + 10);
+    } else if (full > 89 && full <= 100) {
+      petData.setFullVal(full = 100);
     }
-    console.error('healthy', full);
+    console.error('healthy', petData.getFullVal());
   } else {
-    full -= 2;
-    console.error('unhealthy', full);
+    petData.setFullVal(full - 2);
+    console.error('unhealthy', petData.getFullVal());
   }
+  $('#full-score').html(petData.getFullVal());
 };
+
 
 const foodTracker = () => {
   const domString = `<div>
@@ -24,7 +26,7 @@ const foodTracker = () => {
   <button class="feedPet" id="healthy"><i class="fas fa-apple-alt"></i></button>
   <p>Feed unhealthy food</p>
   <button class="feedPet" id="unhealthy"><i class="fas fa-cookie-bite"></i></button>
-  <h3>${petData.getFullVal()}</h3>
+  <h3 id="full-score">${petData.getFullVal()}</h3>
   </div>`;
   utils.printToDom('eat', domString);
   $('.feedPet').on('click', fullnessMeter);
