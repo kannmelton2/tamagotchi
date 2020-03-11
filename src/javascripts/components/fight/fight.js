@@ -19,6 +19,7 @@ const strengthMeter = (event) => {
 
 const strengthTracker = () => {
   const domString = `<div>
+  <h1>Fight</h1>
   <h2>Achilles</h2>
   <p>Run Away (Bravely)</p>
   <button class="fight" id="run-away"><i class="fas fa-running"></i></button>

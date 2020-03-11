@@ -19,6 +19,7 @@ const fullnessMeter = (event) => {
 
 const foodTracker = () => {
   const domString = `<div>
+  <h1>Eat</h1>
   <h2>Achilles</h2>
   <p>Feed healthy food</p>
   <button class="feedPet" id="healthy"><i class="fas fa-apple-alt"></i></button>

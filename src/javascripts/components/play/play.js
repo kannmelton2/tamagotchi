@@ -23,6 +23,7 @@ const funMeter = (event) => {
 
 const funTracker = () => {
   const domString = `<div>
+  <h1>Play</h1>
   <h2>Achilles</h2>
   <p>Super Fun Activity</p>
   <button class="have-fun" id="super-fun"><i class="fas fa-motorcycle"></i></button>
