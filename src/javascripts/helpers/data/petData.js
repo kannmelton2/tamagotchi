@@ -1,4 +1,5 @@
 let full = 100;
+let fun = 50;
 
 const getFullVal = () => full;
 
@@ -6,5 +7,13 @@ const setFullVal = (incomingVal) => {
   full = incomingVal;
 };
 
+const getFun = () => fun;
 
-export default { getFullVal, setFullVal };
+const setFun = (incomingVal) => {
+  fun = incomingVal;
+};
+
+
+export default {
+  getFullVal, setFullVal, getFun, setFun,
+};
