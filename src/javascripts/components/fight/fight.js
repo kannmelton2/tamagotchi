@@ -20,9 +20,9 @@ const strengthMeter = (event) => {
 const strengthTracker = () => {
   const domString = `<div>
   <h2>Achilles</h2>
-  <p>Feed healthy food</p>
+  <p>Run Away (Bravely)</p>
   <button class="fight" id="run-away"><i class="fas fa-running"></i></button>
-  <p>Feed unhealthy food</p>
+  <p>Commit Violence</p>
   <button class="fight" id="violence"><i class="fas fa-burn"></i></button>
   <h3 id="strength-score">${petData.getStrength()}</h3>
   </div>`;
