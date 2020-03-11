@@ -10,10 +10,8 @@ const fullnessMeter = (event) => {
     } else if (full > 89 && full <= 100) {
       petData.setFullVal(full = 100);
     }
-    console.error('healthy', petData.getFullVal());
   } else {
     petData.setFullVal(full - 2);
-    console.error('unhealthy', petData.getFullVal());
   }
   $('#full-score').html(petData.getFullVal());
 };
