@@ -1,5 +1,27 @@
 @import "~@fortawesome/fontawesome-free/css/all.min.css";
+@import "./colors";
 
 body {
-  background-color: gold;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.quad {
+  text-align: center;
+  width: 50%;
+}
+
+button {
+  padding: .5em;
+  border: 2px solid white;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  width: 5em;
+  border-radius: .75em;
 }

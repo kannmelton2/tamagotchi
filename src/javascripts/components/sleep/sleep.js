@@ -10,7 +10,7 @@ const energyMeter = (event) => {
     } else if (energy >= 51 && energy <= 100) {
       petData.setEnergy(energy = 100);
     }
-  } else if (event.target.currentTarget.id === 'deep-slumber') {
+  } else if (event.currentTarget.id === 'deep-slumber') {
     if (energy <= 40) {
       petData.setEnergy(energy + 60);
     } else if (energy >= 41 && energy <= 100) {
@@ -23,6 +23,7 @@ const energyMeter = (event) => {
 
 const energyTracker = () => {
   const domString = `<div>
+  <h1>Sleep</h1>
   <h2>Achilles</h2>
   <p>Take a Nap</p>
   <button class="petSleep" id="nap"><i class="fas fa-heart"></i></button>
